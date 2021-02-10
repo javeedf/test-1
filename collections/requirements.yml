@@ -1,2 +1,2 @@
 collections:
-  - name: dellemc.enterprise_sonic
+  - name: dellemc.sonic
