@@ -1,6 +1,6 @@
 ---
 - hosts: datacenter
-  connection: network_cli
+  connection: network_cli 
   gather_facts: no
   collections:
      - dellemc.enterprise_sonic
