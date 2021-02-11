@@ -1,0 +1,16 @@
+---
+- hosts: datacenter
+  connection: network_cli
+  gather_facts: no
+  collections:
+     - dellemc.enterprise_sonic
+  tasks:
+  - name: "Configure cli using source file"
+    sonic_command:
+      commands:
+        - show version
+#    ignore_errors: True
+    register: result
+ 
+#  - debug:
+#      msg: "{{ result }}"
